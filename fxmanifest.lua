@@ -8,7 +8,7 @@ game 'gta5'
 name 'mi_template_job'
 author 'MIAgimir'
 version '0.0.0'
-repository 'https://github.com/MIAgimir/mi_template_job'
+repository 'https://github.com/Mesa-Indigo/mi_education'
 description 'ox script template'
 
 ----    Dependancies   ----
@@ -20,7 +20,3 @@ shared_scripts { '@ox_lib/init.lua', '@ox_core/lib/init.lua', 'shared/*.lua' }
 client_scripts { '@ox_core/imports/client.lua', 'client/*.lua' }
 
 server_scripts { '@oxmysql/lib/MySQL.lua', '@ox_core/imports/server.lua', 'server/*.lua' }
-
--- ui_page 'web/build/index.html'
-
--- files {}
