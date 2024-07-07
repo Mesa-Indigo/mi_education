@@ -1,4 +1,4 @@
-return {
+Sci = {
     label = 'ULSA: Sciences Courses',
 
     ent_location = vec3(-1649.85, 249.1, 62.45),

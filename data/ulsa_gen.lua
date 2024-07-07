@@ -1,4 +1,4 @@
-return {
+Gen = {
     label = 'ULSA: General Courses',
 
     ent_location = vec3(-1637.3, 180.35, 61.85),

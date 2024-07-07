@@ -20,11 +20,3 @@ shared_scripts { '@ox_lib/init.lua', '@ox_core/lib/init.lua', 'shared/*.lua', 'd
 client_scripts { '@ox_core/imports/client.lua', 'client/*.lua' }
 
 server_scripts { '@oxmysql/lib/MySQL.lua', '@ox_core/imports/server.lua', 'server/*.lua' }
-
-files {
-    '/data/**'
-}
-
-mi_edu '/data/ulsa_gen.lua'
-mi_edu '/data/ulsa_sci.lua'
-mi_edu '/data/ulsa_art.lua'

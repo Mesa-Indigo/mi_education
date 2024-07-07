@@ -1,4 +1,4 @@
-return {
+Art = {
     label = 'ULSA: Artistic Courses',
 
     ent_location = vec3(-1601.2, 207.15, 59.3),
