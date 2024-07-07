@@ -6,6 +6,15 @@
 --      ('msdg_name', 'Masters Degree in OogaBooga'),
 --      ('doct_name', 'Doctorial Degree in OogaBooga'),
 
+CREATE TABLE IF NOT EXISTS `mi_education` (
+  `stateid` TEXT DEFAULT NULL,
+  `currentclassid` INT DEFAULT NULL,
+  `completedclasses` JSON DEFAULT '[]'
+);
+
+INSERT INTO `mi_education` (stateid, currentclassid, completedclasses) 
+VALUES ('ExampleStateID', 12345, '[54321,234512,123142]');
+
 INSERT INTO `ox_licenses` (`name`, `label`) VALUES
   -- General Certifications
   ('cert_const', 'Cert: Gen. Construction'),
