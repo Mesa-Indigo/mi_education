@@ -6,8 +6,9 @@ Gen = {
     ent_rotation = 25.0,
     
     cls_shell = 'shell_office1',
-    cls_location = vec3(0,0,0),
-    cls_rotation = 0,
+    cls_location = vec3(-1649.241, 174.721, 40.00),
+    cls_rotation = -65.00,
+    cls_teleport = vec4(-1644.829, 175.119, 41.149, 205.065),
 
     furniture = {
 

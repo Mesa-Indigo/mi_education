@@ -1,71 +1,41 @@
 --[[    Variables    ]]--
-local shell = { model = nil, spawned = false }
-local doors = { gen = nil, sci = nil, art = nil }
+local shell_gen = { spawned = false, obj = nil }
+local gen_zone, gen_exit, art_zone, art_exit, sci_zone, sci_exit, aca_zone, aca_exit
 
---[[    Create Doors    ]]--
-
--- General Building
-exports.ox_target:addBoxZone({
-    coords = Gen.ent_location,
-    size = Gen.ent_size,
-    rotation = Gen.ent_rotation,
-    debug =  Debug,
-    options = {
-        {
-            name = 'load_academicsoffice', icon = 'fa-solid fa-graduation-cap',
-            label = 'Visit Academic Office',
-            canInteract = function(_, distance)
-                return distance < 2.0
-            end,
+--[[    Event: Load Gen Class Shell    ]]--
+RegisterNetEvent('mi:edu:load_ClassRoom')
+AddEventHandler('mi:edu:load_ClassRoom', function(course)
+    -- set shell variables
+    local model_gen = lib.requestmodel('shell_office1', false)
+    -- load zone for counting players [if needed, using getNearbyPlayers]
+    gen_zone = lib.zones.box({
+        coords = vec3(-1649.241, 174.721, 42.7),
+        size = vec3(12.5, 12.5, 5.0), rotation = 25, debug = Debug,
+        inside = IsInside })
+    -- exit zone
+    gen_exit = exports.ox_target:addBoxZone({
+        coords = vec3(-1643.95, 175.8, 42.3), size = vec3(0.25, 1.2, 2.0),
+        rotation = 24.5, debug =  Debug,
+        options = {
+            {
+                icon = 'fa-solid fa-door-open', label = 'Leave Classroom',
+                canInteract = function(_, distance)
+                    return distance < 2.0 end,
+                onSelect = function()
+                    local ped = cache.ped
+                    Teleport(ped, -1635.596, 181.364, 60.857, 292.49)
+                    DeleteShell(shell_gen.obj) DeleteTarget(gen_exit)
+                    DeleteZone(gen_zone) shell_gen.spawned = false
+                end
+            },
         },
-        {
-            name = 'load_admissionsoffice', icon = 'fa-solid fa-clipboard-list',
-            label = 'Visit Admissions Office',
-            canInteract = function(_, distance)
-                return distance < 2.0
-            end,
-        },
-        {
-            name = 'load_genclass', icon = 'fa-solid fa-landmark',
-            label = 'Select General Course',
-            canInteract = function(_, distance)
-                return distance < 2.0
-            end,
-        },
-    },
-})
-
--- Arts Building
-exports.ox_target:addBoxZone({
-    coords = Art.ent_location,
-    size = Art.ent_size,
-    rotation = Art.ent_rotation,
-    debug =  Debug,
-    options = {
-        {
-            name = 'load_artclass', icon = 'fa-solid fa-masks-theater',
-            label = 'Attend Arts Course',
-            canInteract = function(_, distance)
-                return distance < 2.0
-            end,
-        },
-    },
-})
-
--- Science Building
-exports.ox_target:addBoxZone({
-    coords = Sci.ent_location,
-    size = Sci.ent_size,
-    rotation = Sci.ent_rotation,
-    debug =  Debug,
-    options = {
-        {
-            name = 'load_artclass', icon = 'fa-solid fa-flask-vial',
-            label = 'Attend Science Course',
-            canInteract = function(_, distance)
-                return distance < 2.0
-            end,
-        },
-    },
-})
-
+    })
+    -- load shell
+    shell_gen.obj = CreateObject(model_gen, -1649.241, 174.721, 40.00, true, false, false)
+    SetEntityHeading(shell_gen.obj, -65.00)
+    FreezeEntityPosition(shell_gen.obj, true)
+    shell_gen.spawned = true
+    -- teleport player to location
+    local ped = cache.ped
+    Teleport(ped, -1644.829, 175.119, 41.149, 205.065)
+end)
