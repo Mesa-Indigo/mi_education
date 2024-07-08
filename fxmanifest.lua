@@ -12,7 +12,7 @@ repository 'https://github.com/Mesa-Indigo/mi_education'
 description 'ox script template'
 
 ----    Dependancies   ----
-dependencies { '/server:7290', '/onesync', 'ox_inventory', 'ox_lib', 'ox_target' }
+dependencies { '/server:7290', '/onesync', 'ox_lib', 'ox_target', 'ox_core' }
 
 ----    Manifest Information    ----
 shared_scripts { '@ox_lib/init.lua', '@ox_core/lib/init.lua', 'shared/*.lua', 'data/*.lua' }

@@ -8,10 +8,8 @@ local doors = { gen = nil, sci = nil, art = nil }
 
 -- General Building
 exports.ox_target:addBoxZone({
-    coords = Gen.ent_location,
-    size = Gen.ent_size,
-    rotation = Gen.ent_rotation,
-    debug =  Debug,
+    coords = Gen.enlc, size = Gen.ensz,
+    rotation = Gen.enrt, debug =  Debug,
     options = {
         {
             name = 'load_academicsoffice', icon = 'fa-solid fa-graduation-cap',
@@ -20,7 +18,7 @@ exports.ox_target:addBoxZone({
                 return distance < 2.0
             end,
             onSelect = function()
-                TriggerEvent('mi:edu:load_ClassRoom', Gen)
+                TriggerEvent('mi:edu:loadclass_acd')
             end
         },
         {
@@ -30,7 +28,7 @@ exports.ox_target:addBoxZone({
                 return distance < 2.0
             end,
             onSelect = function()
-                TriggerEvent('mi:edu:load_ClassRoom', Gen)
+                TriggerEvent('mi:edu:loadclass_gen')
             end
         },
 
@@ -57,6 +55,9 @@ exports.ox_target:addBoxZone({
             canInteract = function(_, distance)
                 return distance < 2.0
             end,
+            onSelect = function()
+                TriggerEvent('mi:edu:load_ClassRoom', Art)
+            end
         },
     },
 })
@@ -74,6 +75,9 @@ exports.ox_target:addBoxZone({
             canInteract = function(_, distance)
                 return distance < 2.0
             end,
+            onSelect = function()
+                TriggerEvent('mi:edu:load_ClassRoom', Art)
+            end
         },
     },
 })
