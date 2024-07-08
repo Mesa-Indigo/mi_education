@@ -1,6 +1,6 @@
 --[[    Variables    ]]--
 EDU = {}
-Debug = false
+Debug = true
 
 --[[    Config: Hours    ]]--
 -- this sets the times / days that players will be able to use campus utilities

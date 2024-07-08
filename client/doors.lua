@@ -18,7 +18,7 @@ exports.ox_target:addBoxZone({
                 return distance < 2.0
             end,
             onSelect = function()
-                TriggerEvent('mi:edu:loadclass_acd')
+                TriggerEvent('mi:edu:loadroom', Acd)
             end
         },
     },
@@ -36,7 +36,8 @@ exports.ox_target:addBoxZone({
                 return distance < 2.0
             end,
             onSelect = function()
-                TriggerEvent('mi:edu:load_ClassRoom', Art)
+                -- add checker to see if enrolled
+                TriggerEvent('mi:edu:loadroom', Cls)
             end
         },
         {
@@ -46,7 +47,8 @@ exports.ox_target:addBoxZone({
                 return distance < 2.0
             end,
             onSelect = function()
-                TriggerEvent('mi:edu:load_ClassRoom', Art)
+                -- add checker to see if enrolled
+                TriggerEvent('mi:edu:loadroom', Cls)
             end
         },
     },
