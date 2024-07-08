@@ -17,6 +17,6 @@ dependencies { '/server:7290', '/onesync', 'ox_lib', 'ox_target', 'ox_core' }
 ----    Manifest Information    ----
 shared_scripts { '@ox_lib/init.lua', '@ox_core/lib/init.lua', 'shared/*.lua', 'data/*.lua' }
 
-client_scripts { '@ox_core/imports/client.lua', 'client/*.lua' }
+client_scripts { '@ox_core/imports/client.lua', 'client/**/*.lua' }
 
-server_scripts { '@oxmysql/lib/MySQL.lua', '@ox_core/imports/server.lua', 'server/*.lua' }
+server_scripts { '@oxmysql/lib/MySQL.lua', '@ox_core/imports/server.lua', 'server/**/*.lua' }

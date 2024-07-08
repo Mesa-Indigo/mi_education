@@ -1,6 +1,5 @@
 --[[    Variables    ]]--
 local shell = { spawned = false, obj = nil }
-local inst = { spawned = false, ped = nil }
 local exit
 
 --[[    Event: Load Gen Class Shell    ]]--
@@ -14,6 +13,10 @@ AddEventHandler('mi:edu:loadroom', function(room)
     SetEntityHeading(shell.obj, room.crt.clrt)
     FreezeEntityPosition(shell.obj, true)
     shell.spawned = true
+
+    -- load furniture for area 
+    -- load_furniture(room)
+
     -- teleport player to location
     local ped = cache.ped
     Teleport(ped, room.crt.entp.x, room.crt.entp.y, room.crt.entp.z, room.crt.entp.w)
@@ -29,6 +32,9 @@ AddEventHandler('mi:edu:loadroom', function(room)
                 onSelect = function()
                     Teleport(ped, room.crt.xttp.x, room.crt.xttp.y, room.crt.xttp.z, room.crt.xttp.w)
                     DeleteShell(shell.obj) DeleteTarget(exit) shell.spawned = false
+                    local data = { id = 'ent_gen', title = 'ULSA Campus',
+                    desc = 'You returned to campus' }
+                    TriggerEvent('notif', data, Inf)
                 end
             },
         },

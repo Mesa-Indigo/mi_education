@@ -18,3 +18,14 @@ DeleteTarget = function(target)
         print('no zone to delete') return end
     exports.ox_target:removeZone(target)
 end
+
+
+
+LoadInstructor = function(ped, model, loc, anim)
+    ped.ped = CreatePed(1, model, loc.x, loc.y, loc.z-1, loc.w, true, false)
+    ped.spawned = true
+    TaskStartScenarioInPlace(ped.ped, anim, 0, true)
+    FreezeEntityPosition(ped.ped, true)
+    SetBlockingOfNonTemporaryEvents(ped.ped, true)
+    SetEntityInvincible(ped.ped, true)
+end
