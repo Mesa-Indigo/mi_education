@@ -6,13 +6,13 @@ local doors = { gen = nil, sci = nil, art = nil }
 
 --[[    Create Doors    ]]--
 
--- General Building
+-- academic building
 exports.ox_target:addBoxZone({
-    coords = Gen.enlc, size = Gen.ensz,
-    rotation = Gen.enrt, debug =  Debug,
+    coords = Acd.crt.enlc, size = Acd.crt.ensz,
+    rotation = Acd.crt.enrt, debug =  Debug,
     options = {
         {
-            name = 'load_academicsoffice', icon = 'fa-solid fa-graduation-cap',
+            name = 'load_academicsoffice', icon = 'fa-solid fa-school',
             label = 'Visit Academic Office',
             canInteract = function(_, distance)
                 return distance < 2.0
@@ -21,37 +21,27 @@ exports.ox_target:addBoxZone({
                 TriggerEvent('mi:edu:loadclass_acd')
             end
         },
-        {
-            name = 'load_genclass', icon = 'fa-solid fa-landmark',
-            label = 'Attend Course',
-            canInteract = function(_, distance)
-                return distance < 2.0
-            end,
-            onSelect = function()
-                TriggerEvent('mi:edu:loadclass_gen')
-            end
-        },
-
-        {
-            name = 'load_gettest', icon = 'fa-solid fa-book',
-            label = 'Take General Course Exam',
-            canInteract = function(_, distance)
-                return distance < 2.0
-            end,
-        },
     },
 })
 
 -- Arts Building
 exports.ox_target:addBoxZone({
-    coords = Art.ent_location,
-    size = Art.ent_size,
-    rotation = Art.ent_rotation,
-    debug =  Debug,
+    coords = Cls.crt.enlc, size = Cls.crt.ensz,
+    rotation = Cls.crt.enrt, debug =  Debug,
     options = {
         {
-            name = 'load_artclass', icon = 'fa-solid fa-masks-theater',
-            label = 'Attend Course',
+            name = 'load_courselist:gen', icon = 'fa-solid fa-chalkboard-user',
+            label = 'Attend General Course',
+            canInteract = function(_, distance)
+                return distance < 2.0
+            end,
+            onSelect = function()
+                TriggerEvent('mi:edu:load_ClassRoom', Art)
+            end
+        },
+        {
+            name = 'load_courselist:spec', icon = 'fa-solid fa-graduation-cap',
+            label = 'Attend Specialized Course',
             canInteract = function(_, distance)
                 return distance < 2.0
             end,
@@ -61,24 +51,3 @@ exports.ox_target:addBoxZone({
         },
     },
 })
-
--- Science Building
-exports.ox_target:addBoxZone({
-    coords = Sci.ent_location,
-    size = Sci.ent_size,
-    rotation = Sci.ent_rotation,
-    debug =  Debug,
-    options = {
-        {
-            name = 'load_artclass', icon = 'fa-solid fa-flask-vial',
-            label = 'Attend Course',
-            canInteract = function(_, distance)
-                return distance < 2.0
-            end,
-            onSelect = function()
-                TriggerEvent('mi:edu:load_ClassRoom', Art)
-            end
-        },
-    },
-})
-

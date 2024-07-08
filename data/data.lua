@@ -22,7 +22,7 @@ Cls = {
         label = 'Classrooms',
 
         -- entrance zone
-        enlc = vec3(-1637.3, 180.35, 61.85), ensz = vec3(0.15, 2.15, 2.05), enrt = 25.0,
+        enlc = vec3(-1601.2, 207.15, 59.3), ensz = vec3(0.15, 2.15, 2.05), enrt = 25.0,
 
         -- shell spawn
         clsh = 'shell_office1', clrm = vec3(-1649.241, 174.721, 40.00), clrt = -65.00,
