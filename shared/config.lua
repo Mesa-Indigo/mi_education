@@ -1,5 +1,10 @@
 --[[    Variables    ]]--
 EDU = {}
+OxSys = {
+    Inventory = exports.ox_inventory, Library = exports.ox_lib,
+    Fuel = exports.ox_fuel, Doorlock = exports.ox_doorlock,
+    Target = exports.ox_target
+}
 Debug = true
 
 --[[    Config: Hours    ]]--

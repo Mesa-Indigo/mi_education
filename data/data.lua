@@ -1,28 +1,5 @@
 Acd, Cls, Drm = {}, {}, {}
 
-Acd = {
-    crt = {
-        -- Door label
-        label = 'Academic Offices',
-
-        -- entrance zone
-        enlc = vec3(-1637.3, 180.35, 61.85), ensz = vec3(0.15, 2.15, 2.05), enrt = 25.0,
-        -- exit zone
-        xtlc = vec3(-1643.95, 175.8, 42.3), xtsz = vec3(0.25, 1.2, 2.0), xtrt = 25.0,
-
-        -- Teleport enter zone
-        entp = vec4(-1644.825, 175.367, 42.049, 207.773),
-        -- Teleport exit zone
-        xttp = vec4(-1636.518, 180.721, 60.757, 297.992),
-
-        -- shell spawn
-        clsh = 'shell_office1', clrm = vec3(-1649.241, 174.721, 40.00), clrt = -65.00,
-    },
-    frn = {
-        { prop = 'v_ind_dc_desk02',     loc = vec3(0,0,0), head = 0 },
-    }
-}
-
 Cls = {
     crt = {
         -- Door label
