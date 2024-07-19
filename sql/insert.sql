@@ -8,12 +8,12 @@
 
 CREATE TABLE IF NOT EXISTS `mi_education` (
   `stateid` TEXT DEFAULT NULL,
-  `currentclassid` INT DEFAULT NULL,
+  `currentclassid` TEXT DEFAULT NULL,
   `completedclasses` JSON DEFAULT '[]'
 );
 
 INSERT INTO `mi_education` (stateid, currentclassid, completedclasses) 
-VALUES ('ExampleStateID', 12345, '[54321,234512,123142]');
+VALUES ('ExampleStateID', 'XA1234', '[54321,234512,123142]');
 
 INSERT INTO `ox_licenses` (`name`, `label`) VALUES
   -- General Certifications
