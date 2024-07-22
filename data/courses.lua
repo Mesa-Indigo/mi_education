@@ -41,16 +41,26 @@ return {
     ['sci_03'] = { subject = 'Science', course = 'Mitochondria is the?',            id = 'SC134' },
     ['sci_04'] = { subject = 'Science', course = 'Why do we need oxygen?',          id = 'SC140' },
 
-    -- art courses
+    -- communication courses
+    ['com_01'] = { subject = 'Comm.', course = 'How to talk to people.',            id = 'CM114' },
+    ['com_02'] = { subject = 'Comm.', course = 'Words are hard.',                   id = 'CM126' },
+    ['com_03'] = { subject = 'Comm.', course = 'Am I a bad person?',                id = 'CM138' },
+    ['com_04'] = { subject = 'Comm.', course = 'Negotiating at gunpoint.',          id = 'CM149' },
+
+    -- art degree courses
     ['art_01'] = { subject = 'Art', course = 'What and why are lines?',             id = 'AR114' },
     ['art_02'] = { subject = 'Art', course = 'Sniffing acrylic paints.',            id = 'AR120' },
     ['art_03'] = { subject = 'Art', course = 'How does this make you feel?',        id = 'AR131' },
     ['art_04'] = { subject = 'Art', course = 'An abstract arist vs a hobo.',        id = 'AR142' },
 
-    -- communication courses
-    ['com_01'] = { subject = 'Comm.', course = 'How to talk to people.',            id = 'CM114' },
-    ['com_02'] = { subject = 'Comm.', course = 'Words are hard.',                   id = 'CM126' },
-    ['com_03'] = { subject = 'Comm.', course = 'Am I a bad person?',                id = 'CM138' },
-    ['com_04'] = { subject = 'Comm.', course = 'Negotiating at gunpoint.',           id = 'CM149' },
+    ['art_05'] = { subject = 'Art', course = 'What and why are lines?',             id = 'AR114' },
+    ['art_06'] = { subject = 'Art', course = 'Sniffing acrylic paints.',            id = 'AR120' },
+    ['art_07'] = { subject = 'Art', course = 'How does this make you feel?',        id = 'AR131' },
+    ['art_08'] = { subject = 'Art', course = 'An abstract arist vs a hobo.',        id = 'AR142' },
+
+    ['art_09'] = { subject = 'Art', course = 'What and why are lines?',             id = 'AR114' },
+    ['art_10'] = { subject = 'Art', course = 'Sniffing acrylic paints.',            id = 'AR120' },
+    ['art_11'] = { subject = 'Art', course = 'How does this make you feel?',        id = 'AR131' },
+    ['art_12'] = { subject = 'Art', course = 'An abstract arist vs a hobo.',        id = 'AR142' },s
 
 }
