@@ -70,4 +70,4 @@ INSERT INTO `ox_licenses` (`name`, `label`) VALUES
   ('doct_engrs', 'PhD in Engineering'),
   ('doct_biogl', 'PhD in Biology'),
   ('doct_chems', 'PhD in Chemistry'),
-  ('doct_journ', 'PhD in Journalism'),
+  ('doct_journ', 'PhD in Journalism');
