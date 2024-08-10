@@ -5,7 +5,7 @@ OxSys = {
     Fuel = exports.ox_fuel, Doorlock = exports.ox_doorlock,
     Target = exports.ox_target
 }
-Debug = true
+Debug = true   ---- Debug true or false  
 
 --[[    Config: Hours    ]]--
 -- this sets the times / days that players will be able to use campus utilities
