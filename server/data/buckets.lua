@@ -34,7 +34,7 @@ function SetBucketToUse(PlayerId)
     SetPlayerRoutingBucket(PlayerId, newid)
     SetResourceKvpInt('BucketsInUse', newid)
     if Debug then
-        print(newid)
+        lib.print.info(newid)
     end
 end
 
@@ -45,6 +45,6 @@ function ReturnToGameDefaultBucket(PlayerId)
     SetPlayerRoutingBucket(PlayerId, 0)
     SetResourceKvpInt('BucketsInUse', newid)
     if Debug then
-        print(newid)
+        lib.print.info(newid)
     end
 end

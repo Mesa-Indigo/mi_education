@@ -27,7 +27,7 @@ lib.registerContext({
         description = '',
         icon = 'play',
         onSelect = function()
-          print("Pressed the button!")
+          lib.print.info("Pressed the button!")
         end,
       },
     }

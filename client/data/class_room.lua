@@ -54,9 +54,9 @@ AddEventHandler('mied:c:load:academics', function()
     -- sets routing bucket for single player instance
     TriggerServerEvent('routingbucket:SetRoutingBucket')
 
-    Citizen.Wait(200)
+    Wait(200)
 
-    local player = cache.ped
+   
     -- create / freeze object
     local room = office_info.shell
     local model_gen = lib.requestmodel(room.model, false)
@@ -83,5 +83,5 @@ AddEventHandler('mied:c:load:academics', function()
 
     -- teleport player
     local tpin = office_info.teleport.inside
-    PlayerTeleport(player, tpin.x, tpin.y, tpin.z, tpin.w)
+    PlayerTeleport(cache.ped, tpin.x, tpin.y, tpin.z, tpin.w)
 end)

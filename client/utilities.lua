@@ -1,15 +1,15 @@
 -- words
 PlayerTeleport = function(ped, x, y, z, h)
-    DoScreenFadeOut(150) Citizen.Wait(2000)
-    SetEntityCoords(ped, x, y, z-1, false, false, false, false)
-    SetEntityHeading(ped, h) DoScreenFadeIn(750)
+    DoScreenFadeOut(150) Wait(2000)
+    SetEntityCoords(cache.ped, x, y, z-1, false, false, false, false)
+    SetEntityHeading(cache.ped, h) DoScreenFadeIn(750)
 end
 
 -- words
 CreatePed = function(ped, model, coord, head, anim)
     if Debug then
         if model == nil then
-            print('no model to reference for object')
+            lib.print.error('no model to reference for object')
         end
     end
     ped = CreateObject(model, coord.x,
@@ -25,7 +25,7 @@ end
 DeletePed = function(ped)
     if Debug then
         if ped == nil then
-            print('no ped to delete') end
+            lib.print.error('no ped to delete') end
     end
     DeleteEntity(ped) ped = nil
 end
@@ -34,7 +34,7 @@ end
 CreateObj = function(obj, model, coord, head)
     if Debug then
         if model == nil then
-            print('no model to reference for object')
+            lib.print.error('no model to reference for object')
         end
     end
     obj = CreateObject(model, coord.x, coord.y, coord.z, true, false, false)
@@ -45,7 +45,7 @@ end
 DeleteObj = function(obj)
     if Debug then
         if obj == nil then
-            print('no object to delete')end
+            lib.print.error('no object to delete')end
     end
     DeleteEntity(obj) obj = nil
 end
@@ -53,7 +53,7 @@ end
 -- words
 DeleteTarget = function(target)
     if not target then
-        print('no zone to delete') return end
+        lib.print.error('no zone to delete') return end
     exports.ox_target:removeZone(target)
 end
 
