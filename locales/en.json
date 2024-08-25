@@ -1,0 +1,19 @@
+{
+    "debug": "Debug: ",
+    "load_rs": "Resource Started",
+
+    "load_in": "Connected: ",
+    "load_out": "Disconnected: ",
+
+    "user_name": "User: ",
+    "user_usid": "User ID: ",
+    "user_idnt": "User Identifier: ",
+    "char_stid": "State ID: ",
+
+    "blip_campus": "ULSA Campus",
+    "blip_traing": "ULSA Annex",
+    "blip_drives": "S.A. Auto School",
+    "blip_marine": "S.A. Boating School",
+    "blip_airfrm": "S.A. Airframe School"
+
+}

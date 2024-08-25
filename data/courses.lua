@@ -61,6 +61,6 @@ return {
     ['art_09'] = { subject = 'Art', course = 'What and why are lines?',             id = 'AR114' },
     ['art_10'] = { subject = 'Art', course = 'Sniffing acrylic paints.',            id = 'AR120' },
     ['art_11'] = { subject = 'Art', course = 'How does this make you feel?',        id = 'AR131' },
-    ['art_12'] = { subject = 'Art', course = 'An abstract arist vs a hobo.',        id = 'AR142' },s
+    ['art_12'] = { subject = 'Art', course = 'An abstract arist vs a hobo.',        id = 'AR142' },
 
 }
