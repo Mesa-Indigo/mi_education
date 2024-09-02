@@ -1,10 +1,18 @@
 
-local ub = nil
-local loadBlip = function()
-    ub = AddBlipForCoord(-1640.583, 219.006, 60.641)
-    SetBlipSprite(ub, 764) SetBlipDisplay(ub, 4)
-    SetBlipColour(ub, 60) SetBlipScale(ub, 0.6)
-    SetBlipAsShortRange(ub, true) BeginTextCommandSetBlipName('STRING')
-    AddTextComponentSubstringPlayerName('U.L.S.A.') EndTextCommandSetBlipName(ub)
+-- load blip function
+local loadblip = function(data)
+local blip = AddBlipForCoord(data.loc.x, data.loc.y, 0)
+    SetBlipSprite(blip, data.sprite) SetBlipDisplay(blip, 4)
+    SetBlipScale(blip, data.scale) SetBlipColour(blip, data.color)
+    SetBlipAsShortRange(blip, true) BeginTextCommandSetBlipName("STRING")
+    AddTextComponentString(data.label) EndTextCommandSetBlipName(blip)
 end
-loadBlip()
+
+function LoadBlips(data)
+    for k, v in pairs(data) do
+        if not data.active then return end
+        if data.active then
+            loadblip(v)
+        end
+    end
+end
