@@ -1,17 +1,19 @@
 
 -- variables
 local test = {
-    score = 0,
-    quest = 5,
-    count = 1,
-    total = 5,
+    score = 0, quest = 5,
+    count = 1, total = 5,
 }
 
 -- function
-local menu = function()
+local answered = function(data)
+    -- determines answer / progression
+end
+
+Proctoring = function()
     lib.registerContext({
-        id = 'test_menu',
-        title = 'Test Example',
+        id = 'test_menu', canClose = false,
+        title = locale('crs_course')..locale('crs_general'),
         options = {
             {
                 title = 'Test Progress',
@@ -63,10 +65,9 @@ local menu = function()
             },
         }
     })
-
     lib.showContext('test_menu')
 end
 
 RegisterCommand('test', function()
-    menu()
+    Proctoring()
 end, false)

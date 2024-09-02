@@ -39,7 +39,7 @@ Data.locations = {
 
         -- courses at location
         courses = {
-            'General'
+            ['General'] = { cost = 5000, questions = 5 }
         }
 
     },
@@ -81,7 +81,7 @@ Data.locations = {
 
         -- courses at location
         courses = {
-            'Certificates'
+            ['Certificates'] = { cost = 2500, questions = 5 }
         }
 
     },

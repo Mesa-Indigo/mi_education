@@ -14,6 +14,10 @@
     "blip_traing": "ULSA Annex",
     "blip_drives": "S.A. Auto School",
     "blip_marine": "S.A. Boating School",
-    "blip_airfrm": "S.A. Airframe School"
+    "blip_airfrm": "S.A. Airframe School",
+
+    "crs_course": "Course: ",
+    "crs_general": "General Studies"
+    
 
 }
