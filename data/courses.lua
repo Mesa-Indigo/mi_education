@@ -54,12 +54,12 @@ Data.Courses = {
         },
 
         [4] = {
-            prompt = 'word',
-            answer = 'A',
-            q1 = { id = 'A', prompt = 'word' },
-            q2 = { id = 'B', prompt = 'word' },
-            q3 = { id = 'C', prompt = 'word' },
-            q4 = { id = 'D', prompt = 'word' }
+            prompt = 'Which empire was dominant in the Indian subcontinent before the British?',
+            answer = 'B',
+            q1 = { id = 'A', prompt = 'The Nepalese Empire' },
+            q2 = { id = 'B', prompt = 'The Mughal Empire' },
+            q3 = { id = 'C', prompt = 'The Persian Empire' },
+            q4 = { id = 'D', prompt = 'The Chinese Empire' }
         },
 
         [5] = {
@@ -72,30 +72,30 @@ Data.Courses = {
         },
 
         [6] = {
-            prompt = 'word',
-            answer = 'A',
-            q1 = { id = 'A', prompt = 'word' },
-            q2 = { id = 'B', prompt = 'word' },
-            q3 = { id = 'C', prompt = 'word' },
-            q4 = { id = 'D', prompt = 'word' }
+            prompt = 'The Meiji restoration occurred in __________.',
+            answer = 'C',
+            q1 = { id = 'A', prompt = 'Korea' },
+            q2 = { id = 'B', prompt = 'Russia' },
+            q3 = { id = 'C', prompt = 'Japan' },
+            q4 = { id = 'D', prompt = 'China' }
         },
 
         [7] = {
-            prompt = 'word',
+            prompt = 'The XYZ affair was important because __________.',
             answer = 'A',
-            q1 = { id = 'A', prompt = 'word' },
-            q2 = { id = 'B', prompt = 'word' },
-            q3 = { id = 'C', prompt = 'word' },
-            q4 = { id = 'D', prompt = 'word' }
+            q1 = { id = 'A', prompt = 'It led to the construction of the United States’ navy ' },
+            q2 = { id = 'B', prompt = 'It caused the United States to stop trading with Britain' },
+            q3 = { id = 'C', prompt = 'It caused the United States to declare war on France' },
+            q4 = { id = 'D', prompt = 'It caused the United States to declare war against Britain' }
         },
 
         [8] = {
-            prompt = 'word',
+            prompt = 'The U.S. military took possession of the Phillipines during:',
             answer = 'A',
-            q1 = { id = 'A', prompt = 'word' },
-            q2 = { id = 'B', prompt = 'word' },
-            q3 = { id = 'C', prompt = 'word' },
-            q4 = { id = 'D', prompt = 'word' }
+            q1 = { id = 'A', prompt = 'World War II' },
+            q2 = { id = 'B', prompt = 'World War I' },
+            q3 = { id = 'C', prompt = 'Korean War' },
+            q4 = { id = 'D', prompt = 'Spanish-American War' }
         },
 
         [9] = {
