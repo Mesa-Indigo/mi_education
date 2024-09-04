@@ -1,0 +1,30 @@
+html {
+	overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cont_main {
+    padding: 25px;
+}
+
+.cont_header {
+	width: 50%; height: 20%; border: 5px solid rgb(71, 71, 71); border-style: outset;
+    background-image: linear-gradient(to bottom right, rgb(255, 154, 39), rgb(126, 111, 45));
+    display: flex; justify-content: center; margin-left: auto; margin-right: auto; border-radius: 50px;
+    
+}
+
+.cont_header_ctxt {
+    color: white; text-shadow: 2px 2px 4px #000000;
+}
+
+.cont_header_parg {
+    color: white; text-shadow: 2px 2px 4px #000000;
+    display: flex; justify-content: center; margin-left: auto; margin-right: auto;
+}
+
+.logo {
+    display: flex; justify-content: center; margin-left: auto; margin-right: auto;
+    margin-top: 10px; 
+    
+}
