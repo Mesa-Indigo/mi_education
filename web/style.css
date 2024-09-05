@@ -1,93 +1,81 @@
 
-body {
-    background: transparent; margin:5px;
-    padding:0;
-}
+/*|     --------------------------------     |*/
+/*|     --------------------------------     |*/
+/*|     body     |*/
+body { background: transparent; margin:5px; padding:0; font-family: 'Open Sans', sans-serif; }
 
+/*|     --------------------------------     |*/
+/*|     --------------------------------     |*/
+/*|     main container for nui     |*/
 .main {
-    border: 2px solid rgb(22, 22, 22);
-    border-radius: 10px;
-    width: 60%; height: 80%;
-    position: absolute;
-    top: 10%; left: 20%;
-    border-style: outset;
+    border: 2px solid rgb(22, 22, 22); border-radius: 10px; width: 60%; height: 80%;
+    position: absolute; top: 10%; left: 20%; border-style: outset;
 }
 
-.browser {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px; 
-    padding: 15px; height: 20px;
+/*|     --------------------------------     |*/
+/*|     --------------------------------     |*/
+/*|     searchbar data     |*/
+.searchbar {
+    border-top-left-radius: 7px;  border-top-right-radius: 7px;  padding: 15px; height: 20px;
     background-image: linear-gradient(rgb(212, 212, 212), rgb(148, 148, 148));
     border-bottom: 2px solid rgb(22, 22, 22);
     
 }
 
-.browser_main {
-    float: right;
-}
+.searchbar_main { float: left; }
 
-.left {
-    width: 15%;
-}
+.sb_left { width: 15%; }
 
-.middle {
-    width: 75%;
-    position: relative;
-}
+.sb_middle { width: 75%; position: relative; }
 
-.middle i {
-    position: absolute;
-    left: 430px;
-    top: 2px;
-    color: gray;
-}
+.sb_middle i { position: absolute; left: 430px; top: 2px; color: gray; }
 
-.right {
-    width: 10%;
-}
+.sb_right { width: 10%; }
 
 input[type=text] {
-    width: 40%;
-    border-radius: 3px;
-    border: none;
-    background-color: white;
-    margin-top: -8px;
-    height: 25px;
-    color: rgb(88, 88, 88);
-    padding: 5px;
+    width: 40%; border-radius: 3px; border: none; background-color: white;
+    margin-top: -8px; height: 25px; color: rgb(88, 88, 88); padding: 5px;
 }
 
 .bar {
-    width: 20px;
-    height: 3px;
-    margin: 3px 0;
-    display: block;
+    width: 20px; height: 3px; margin: 3px 0; display: block;
     background-color: rgb(88, 88, 88);
 }
 
-.page {
-    margin: auto;
-}
+/*|     --------------------------------     |*/
+/*|     --------------------------------     |*/
+/*|     page data     |*/
+.page { margin: auto; }
 
+/*|     page header data     |*/
 .page_heading {
-    display: flex; padding: 20px;
-    background-image: linear-gradient(to bottom right, rgb(230, 233, 67), rgb(54, 130, 173));
+    text-decoration-thickness: 5px; text-decoration-line: underline;
+    display: flex; padding: 20px; text-shadow: 4px 4px #3e3f41; color: rgb(255, 255, 255);
+    background-image: url("/web/img/head_bgnd.png"); background-size: cover;
+    background-repeat: no-repeat; border-bottom: 2px solid rgb(22, 22, 22);
 }
 
-.page_heading_logo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
+.page_heading_logo { margin-left: auto; margin-right: auto; margin-top: auto; }
+
+.page_heading_font { margin-left: auto; margin-right: auto; margin-top: auto; }
+
+.page_heading_seal { margin-left: auto; margin-right: auto; margin-top: auto; }
+
+/*|     --------------------------------     |*/
+/*|     --------------------------------     |*/
+/*|     page body information     |*/
+.page_body {
+    background-image: linear-gradient(rgb(226, 225, 169), rgb(168, 132, 79));
+    width: 100%; height: 80.45%; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
 }
 
-.page_heading_font {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
+.page_body_container {
+    background-image: linear-gradient(rgb(235, 235, 235), rgb(218, 218, 218));
+    width: 50%; height: 55%; border-radius: 8px; position: fixed; bottom: 15%; right: 25%;
+    border: 2px solid rgb(22, 22, 22); border-style: outset;
 }
 
-.page_heading_seal {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
+.page_body_heading {
+    margin-left: auto; margin-right: auto; margin-top: auto;
+    text-shadow: 2px 2px #bdbdbd; color: rgb(66, 66, 66);
 }
