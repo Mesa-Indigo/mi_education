@@ -11,6 +11,14 @@ var qst_ttl = [];
 // last choice clicked
 var lst_chc = [];
 
-function getQuestion() {
+function getCourseId() {
     
+}
+
+function getQuestion() {
+
+}
+
+function getCourse() {
+    $("content").css("display", "block");
 }
