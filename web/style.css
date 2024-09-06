@@ -76,6 +76,11 @@ input[type=text] {
 }
 
 .page_body_heading {
-    margin-left: auto; margin-right: auto; margin-top: auto;
+    display: flex; align-self: center; margin: auto; justify-content: center;
     text-shadow: 2px 2px #bdbdbd; color: rgb(66, 66, 66);
+}
+
+.progbar {
+	width: 50%; align-self: center; height: 10%; margin: auto;
+    display: flex; flex-wrap: wrap; justify-content: center; padding: 0;
 }
